@@ -29,7 +29,7 @@ def get_letter(attempts, guess):
                        f'{attempts} attempts left): ').lower()
 
     if len(user_input) != 1 or user_input not in ascii_lowercase:
-        print(f'> Please input a {hint} letter!')
+        print(f'Please input a {hint} letter!')
         return None
     elif user_input in guess:
         print(f"> You have guessed '{user_input}' before")
